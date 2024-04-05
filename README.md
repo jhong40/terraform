@@ -55,3 +55,5 @@ resource "aws_instance" "web" {
 }
 
 ```
+![image](https://github.com/jhong40/terraform/assets/13383120/fea39cee-6bee-4a5b-b0fb-5f7e8dd5e08b)
+
