@@ -3,6 +3,10 @@
 https://github.com/angelo-malatacca/Terraform-backend
 
 ```
+terraform plan -no-color > tfout.txt    
+```
+
+```
 terraform init
 terraform plan
 terraform apply
