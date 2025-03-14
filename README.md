@@ -2,6 +2,9 @@
 
 https://github.com/angelo-malatacca/Terraform-backend
 
+deep dive
+https://github.com/ned1313/Deep-Dive-Terraform
+
 ```
 terraform plan -no-color > tfout.txt    
 ```
