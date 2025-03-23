@@ -85,6 +85,8 @@ TF_CLI_ARGS="COMMAND_flags"  # -no-color
 
 
 ![image](https://github.com/user-attachments/assets/c8f94bcd-1dc7-4d2a-9e0c-d04ededb1f80)
+![image](https://github.com/user-attachments/assets/85f430f9-5fa9-4a64-9d46-4907910289e6)
+
 
 ![image](https://github.com/jhong40/terraform/assets/13383120/2b098bb1-1e18-4ca1-95f6-4824b7c1ecc7)
 
