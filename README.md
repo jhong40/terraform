@@ -81,6 +81,7 @@ TF_CLI_ARGS="COMMAND_flags"  # -no-color
 ```
 
 
+![image](https://github.com/user-attachments/assets/b5c8e054-5c3f-4119-a48f-39a4aac65c8d)
 
 ![image](https://github.com/user-attachments/assets/c8f94bcd-1dc7-4d2a-9e0c-d04ededb1f80)
 
