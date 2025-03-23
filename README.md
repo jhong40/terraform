@@ -31,6 +31,8 @@ terrafrom import
 export TF_LOG=TRACE
 export TF_LOG_PATH=/tmp/terraform.log
 
+~> 1.2.3  # right most number >=3  (no change for 1.2): 1.2.3, 1.2.4 (no: 1.3.x 2.x.x)
+ 
 
 
 lifecycle -> ignore_changes: tags, all
