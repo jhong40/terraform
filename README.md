@@ -36,7 +36,7 @@ export TF_LOG_PATH=/tmp/terraform.log
 
 
 lifecycle -> ignore_changes: tags, all
-
+sensitive: true   # cli, output => <sensitive> 
 
 resource "aws_instance" "web" {
   ami=
