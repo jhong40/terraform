@@ -14,13 +14,13 @@ terraform init
 terraform plan
 terraform apply
 terraform validate   # validate the syntax of all tf files
-terraform show       # show state
+terraform show       # show all the resources  (terraform state show - show one resource)
 terraform providers
 terraform output     #
 terraform refresh    # depreciate
 terraform graph
 
-terraform state list  # list of resource in state: aws_iam_role.alb_role
+terraform state list                        # list of resource in state: aws_iam_role.alb_role
 terraform state show aws_iam_role.alb_role  # show resource details
 
 terrafrom taint aws_instance.webserver   # make it taited, it will be replaced when plan / apply
