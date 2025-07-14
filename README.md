@@ -80,6 +80,21 @@ TF_CLI_ARGS="COMMAND_flags"  # -no-color
 
 ```
 
+```
+# Workspace
+locals {
+  instance_type={
+    default = "t2.nano"
+    dev = "t2.micro"
+    prod = "m5.large"
+  }
+}
+
+resource "aws_instance" "myec2" {
+  ami   = "ami_aaabbb1234"
+  instance_type = local.instance_type[terraform.workspace]
+```
+
 
 ![image](https://github.com/user-attachments/assets/93838552-cf4b-4f79-82c4-c5cba32b11dd)
 
