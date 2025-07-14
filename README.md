@@ -93,6 +93,7 @@ locals {
 resource "aws_instance" "myec2" {
   ami   = "ami_aaabbb1234"
   instance_type = local.instance_type[terraform.workspace]
+}
 ```
 
 
