@@ -109,6 +109,8 @@ drawback
      backend.tf
    prod
      main.tf
+     prod.tfvars
+     backend.tf
   modules
     network
     security
