@@ -80,8 +80,8 @@ TF_CLI_ARGS="COMMAND_flags"  # -no-color
 
 ```
 
+### Workspace
 ```
-# Workspace
 locals {
   instance_type={
     default = "t2.nano"
@@ -100,7 +100,7 @@ drawback
 - Testing and Promotion challeng (Terrform doesn't know branch or dir)
 - Variable Value management
 ```
-
+### Separate Directory and Child Modules
 ```
  Environment
    dev
