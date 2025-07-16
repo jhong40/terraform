@@ -101,6 +101,20 @@ drawback
 - Variable Value management
 ```
 
+```
+ Environment
+   dev
+     main.tf
+     dev.tfvars
+     backend.tf
+   prod
+     main.tf
+  modules
+    network
+    security
+    ec2
+```
+
 
 ![image](https://github.com/user-attachments/assets/93838552-cf4b-4f79-82c4-c5cba32b11dd)
 
