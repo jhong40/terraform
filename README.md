@@ -31,6 +31,7 @@ terraform graph
 
 terraform state list                        # list of resource in state: aws_iam_role.alb_role
 terraform state show aws_iam_role.alb_role  # show resource details
+terraform state show 'someresource'         # if issue, add ''
 
 terrafrom taint aws_instance.webserver   # make it taited, it will be replaced when plan / apply
 terraform untaint aws_instance.webserver
