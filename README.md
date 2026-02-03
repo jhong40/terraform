@@ -127,6 +127,13 @@ drawback
     ec2
 ```
 
+#### terraform console
+```
+cidrsubnet("10.0.0.0/16", 8, 0)   # 1st subnet => 10.0.0.0/24
+cidrsubnet("10.0.0.0/16", 8, 1)   # 1st subnet => 10.0.1.0/24
+
+```
+
 
 ![image](https://github.com/user-attachments/assets/93838552-cf4b-4f79-82c4-c5cba32b11dd)
 
