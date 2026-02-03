@@ -138,7 +138,7 @@ format("%s-%s-vpc", "CompanyA", "Product")  #=> CompanyA-Product-vpc
 lower(format("%s-%s-vpc", "CompanyA", "Product"))  # => companya-product-vpc
 coalesce("a", "b")    # return the 1st one that is not null # => a
 coalesce("","b)       # => b
-coalessce(var.companyname, var.teamname)    # if companyname is define, return it. Otherwise, return teamname
+coalessce(var.owner, var.teamname)    # if owner is define, return it. Otherwise, return teamname
 provider::aws::arn_parse(arn)    # break the arn into a map for easy access
 
 
