@@ -127,7 +127,7 @@ drawback
     ec2
 ```
 
-#### terraform console
+#### terraform console https://github.com/ned1313/Terraform-Advanced-HCL
 ```
 cidrsubnet(cidr-range, subnet_bits, network-number) 
 cidrsubnet("10.0.0.0/16", 8, 0)   # 1st subnet => 10.0.0.0/24
