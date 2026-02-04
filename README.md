@@ -90,6 +90,16 @@ TF_CLI_ARGS="COMMAND_flags"  # -no-color
 
 ```
 
+### State sync (somebody change the resource, you want to keep it as is)
+```
+# terraform config: m3-large. Somebody change to m4-large
+terraform plan -refresh-only     # preview state changes: m3-large=> m4-large
+terraform apply -refresh-only    # sync state: state will change=>m4-large
+
+# at this time terraform config is still m3-large
+# you can change the terraform config => m4-large. terraform plan will show no change
+```
+
 ### Workspace
 ```
 locals {
