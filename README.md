@@ -90,14 +90,35 @@ TF_CLI_ARGS="COMMAND_flags"  # -no-color
 
 ```
 
-### State sync (somebody change the resource, you want to keep it as is)
+### State 
+#### Scenario 1: terraform config: m3-large. Somebody change to m4-large
 ```
-# terraform config: m3-large. Somebody change to m4-large
 terraform plan -refresh-only     # preview state changes: m3-large=> m4-large
 terraform apply -refresh-only    # sync state: state will change=>m4-large
 
 # at this time terraform config is still m3-large
 # you can change the terraform config => m4-large. terraform plan will show no change
+```
+#### Scenario 2: aws_instane.web -> aws_instance.app
+```
+# make change to terraform  configure: aws_instance.web => aws_instance.app
+option 1: terraform state mv aws_instance.web aws_instance.app   
+option 2: 
+   moved {
+    from = aws_instance.web
+    to = aws_instance.app
+   }
+```
+#### Scenario 3: remove resource without destroy
+```
+option 1: terraform state rm aws_instance.web
+option 2:
+  removed {
+    from = aws_instance.web
+    lifecycle ={
+      destroy=false
+    }
+  }
 ```
 
 ### Workspace
